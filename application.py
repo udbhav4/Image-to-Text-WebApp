@@ -1,7 +1,7 @@
 import pytesseract
 import streamlit as st
 from PIL import Image
-import cv2
+pytesseract.pytesseract.tesseract_cmd= '/app/.apt/usr/bin/tesseract'
 
 st.title("IMAGE TO TEXT CONVERTER")
 i= st.sidebar.file_uploader("Choose an image:")  #'sidebar' moves our browzer to the left side of the website page.
